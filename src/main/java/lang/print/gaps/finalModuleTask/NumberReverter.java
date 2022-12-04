@@ -11,7 +11,7 @@ public class NumberReverter {
 //        List<char[]> reversed = new ArrayList<>();
         String reversed = new String();
         for (int i = num.length() - 1; /*digits.size() - 1;*/ i >= 0; i--) {
-            reversed.concat(String.valueOf(Character.getNumericValue(num.charAt(i))))/*.add(digits.get(i))*/;
+            reversed = reversed.concat(String.valueOf(Character.getNumericValue(num.charAt(i))))/*.add(digits.get(i))*/;
         }
         System.out.println(reversed);
     }
